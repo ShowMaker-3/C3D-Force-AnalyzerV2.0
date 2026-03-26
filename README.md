@@ -21,7 +21,11 @@ OpenSim 导出 – 生成 .trc（标记点轨迹）和 .mot（地面反作用力
 中英双语输出 – 所有提示和结果均为中英双语，方便国内外用户
 
 安装
-bash
+
+确保已安装 Python 3.7 或更高版本，然后运行以下命令安装所有依赖：
+
+pip install -r requirements.txt
+
 # 克隆仓库
 git clone https://github.com/yourusername/C3D-Force-Analyzer-Stable.git
 cd C3D-Force-Analyzer-Stable
@@ -36,26 +40,25 @@ pip install -r requirements.txt
 快速开始
 将 C3D 文件放入一个文件夹（例如 data/）。
 
+
 运行自动配置（或手动配置）：
 
-bash
+
 python auto_config.py
 按提示输入文件夹路径，程序将自动生成 project_config.json。
 
 批量处理所有文件：
 
-bash
 python batch_process_by_type.py
 选择动作类型（gait/single_jump/double_jump/cmj/cut），结果保存在时间戳文件夹中。
 
 运行统计分析：
 
-bash
 python stat_analysis.py
 选择累积 Excel 文件和指标列，即可得到统计结果和图表。
 
 示例数据
-examples/ 文件夹中提供了几个示例 C3D 文件和一个示例累积 Excel 文件，可用于测试完整流程。
+`examples/` 文件夹中提供了五个示例 C3D 文件和一个示例累积 Excel 文件，可用于测试工具箱的完整流程。您可以直接使用这些文件运行 `auto_config.py` 和 `batch_process_by_type.py`，体验通道配置、批量处理和统计分析功能。
 
 文档
 详细使用说明请参阅 docs/ 文件夹。
@@ -100,6 +103,10 @@ source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
 
 # Install dependencies
+
+Make sure Python 3.7 or higher is installed, then install all dependencies with:
+
+pip install -r requirements.txt
 pip install -r requirements.txt
 Quick Start
 Place your C3D files in a folder (e.g., data/).
@@ -123,8 +130,7 @@ python stat_analysis.py
 Select the cumulative Excel file and the metric column to obtain statistics and plots.
 
 Example Data
-The examples/ folder contains sample C3D files and an example cumulative Excel file for testing.
-
+The `examples/` folder contains five sample C3D files and an example cumulative Excel file to test the full pipeline. You can directly use these files with `auto_config.py` and `batch_process_by_type.py` to explore channel configuration, batch processing, and statistical analysis.
 Documentation
 For detailed instructions, see the docs/ folder.
 
