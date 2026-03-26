@@ -73,7 +73,7 @@ text
 [Citation – 待添加]
 
 
-Introduction
+# Introduction
 C3D Force Analyzer is an open‑source Python toolbox for automated processing of force plate data in C3D files, designed for biomechanics research. It supports five movement types (gait, single‑leg jump, double‑leg jump, countermovement jump, cutting) and provides channel configuration, event detection, batch processing, statistical analysis, and OpenSim export. This stable version focuses on single‑force‑plate data and includes automatic orientation detection and flipping, ensuring that force signals follow the “upward positive” convention for seamless OpenSim compatibility.
 
 Features
