@@ -1,4 +1,4 @@
-C3D Force Analyzer / C3D 力数据分析工具箱
+# C3D Force Analyzer / C3D 力数据分析工具箱
 中文 | English
 
 Chinese
